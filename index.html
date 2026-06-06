@@ -3,275 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Artist & Game Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>TewOrcapt - Portfolio</title>
+    <link rel="stylesheet" href="styles-new.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">TewOrcapt</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#work" class="nav-link">Work</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <img src="images/hero-bg.jpg" alt="Hero Background" class="hero-image">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>TewOrcapt</h1>
-            <p class="subtitle">Artist | Game Developer</p>
-            <p class="tagline">Creating immersive experiences through art and interactive gameplay</p>
-            <div class="cta-buttons">
-                <a href="#work" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    <div class="container-main">
+        <!-- Left Sidebar with Bubble -->
+        <aside class="sidebar">
+            <div class="profile-bubble">
+                <img src="images/avatar.jpg" alt="Profile" class="profile-image">
+                <h1 class="profile-name">TewOrcapt</h1>
+                <p class="profile-subtitle">Artist & Game Developer</p>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate artist and game developer dedicated to creating visually stunning and engaging interactive experiences. 
-                        With a strong foundation in both digital art and game development, I combine creative storytelling with technical expertise 
-                        to bring ideas to life.
-                    </p>
-                    <p>
-                        My journey spans creating compelling visual narratives and developing immersive gameplay mechanics. I'm constantly exploring 
-                        new techniques, tools, and creative directions to push the boundaries of what's possible in interactive entertainment.
-                    </p>
-                    <div class="skills-section">
-                        <h3>Key Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">Digital Art</div>
-                            <div class="skill-item">Game Design</div>
-                            <div class="skill-item">3D Modeling</div>
-                            <div class="skill-item">UI/UX Design</div>
-                            <div class="skill-item">Unreal Engine</div>
-                            <div class="skill-item">Unity</div>
-                            <div class="skill-item">Animation</div>
-                            <div class="skill-item">Concept Art</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="work">
-        <div class="container">
-            <h2>My Work</h2>
             
-            <!-- Art Portfolio -->
-            <div class="work-category">
-                <h3>Art Portfolio</h3>
-                <div class="work-grid">
-                    <div class="work-item">
-                        <div class="work-image">
-                            <img src="images/art/artwork-1.jpg" alt="Art Piece 1" class="work-img-fallback">
-                            <div class="placeholder-art">🎨 Add your artwork here</div>
-                        </div>
-                        <h4>Project Title</h4>
-                        <p class="work-description">Description of your art project</p>
-                    </div>
-                    <div class="work-item">
-                        <div class="work-image">
-                            <img src="images/art/artwork-2.jpg" alt="Art Piece 2" class="work-img-fallback">
-                            <div class="placeholder-art">🎨 Add your artwork here</div>
-                        </div>
-                        <h4>Project Title</h4>
-                        <p class="work-description">Description of your art project</p>
-                    </div>
-                    <div class="work-item">
-                        <div class="work-image">
-                            <img src="images/art/artwork-3.jpg" alt="Art Piece 3" class="work-img-fallback">
-                            <div class="placeholder-art">🎨 Add your artwork here</div>
-                        </div>
-                        <h4>Project Title</h4>
-                        <p class="work-description">Description of your art project</p>
-                    </div>
-                </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="nav-link">About & Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>&copy; 2026 TewOrcapt</p>
             </div>
+        </aside>
 
-            <!-- Game Portfolio -->
-            <div class="work-category">
-                <h3>Game Development</h3>
-                <div class="work-grid">
-                    <div class="work-item">
-                        <div class="work-image">
-                            <img src="images/games/game-1.jpg" alt="Game 1" class="work-img-fallback">
-                            <div class="placeholder-game">🎮 Add your game screenshot here</div>
-                        </div>
-                        <h4>Game Title</h4>
-                        <p class="work-description">Description of your game project</p>
-                        <div class="work-links">
-                            <a href="#" class="work-link">Play</a>
-                            <a href="#" class="work-link">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <div class="work-image">
-                            <img src="images/games/game-2.jpg" alt="Game 2" class="work-img-fallback">
-                            <div class="placeholder-game">🎮 Add your game screenshot here</div>
-                        </div>
-                        <h4>Game Title</h4>
-                        <p class="work-description">Description of your game project</p>
-                        <div class="work-links">
-                            <a href="#" class="work-link">Play</a>
-                            <a href="#" class="work-link">Learn More</a>
-                        </div>
-                    </div>
-                    <div class="work-item">
-                        <div class="work-image">
-                            <img src="images/games/game-3.jpg" alt="Game 3" class="work-img-fallback">
-                            <div class="placeholder-game">🎮 Add your game screenshot here</div>
-                        </div>
-                        <h4>Game Title</h4>
-                        <p class="work-description">Description of your game project</p>
-                        <div class="work-links">
-                            <a href="#" class="work-link">Play</a>
-                            <a href="#" class="work-link">Learn More</a>
-                        </div>
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-background">
+                    <img src="images/hero-bg.jpg" alt="Hero Background" class="hero-image">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>Welcome</h1>
+                    <p class="hero-tagline">Creating immersive experiences through art and interactive gameplay</p>
+                    <div class="hero-cta">
+                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2>Resume & Background</h2>
-            <div class="resume-content">
-                <div class="resume-column">
-                    <h3>Experience</h3>
-                    <div class="resume-item">
-                        <h4>Position Title</h4>
-                        <p class="resume-meta">Company Name | Start Date - End Date</p>
-                        <ul class="resume-details">
-                            <li>Achievement or responsibility</li>
-                            <li>Achievement or responsibility</li>
-                            <li>Achievement or responsibility</li>
-                        </ul>
-                    </div>
-                    <div class="resume-item">
-                        <h4>Position Title</h4>
-                        <p class="resume-meta">Company Name | Start Date - End Date</p>
-                        <ul class="resume-details">
-                            <li>Achievement or responsibility</li>
-                            <li>Achievement or responsibility</li>
-                        </ul>
-                    </div>
+            <!-- Resume Quick Preview -->
+            <section class="resume-preview">
+                <div class="content-wrapper">
+                    <h2>Experience & Skills</h2>
+                    <div class="preview-grid">
+                        <div class="preview-card">
+                            <h3>Experience</h3>
+                            <ul class="experience-list">
+                                <li>
+                                    <strong>Position Title</strong>
+                                    <span class="meta">Company | Start - End</span>
+                                </li>
+                                <li>
+                                    <strong>Position Title</strong>
+                                    <span class="meta">Company | Start - End</span>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <h3 style="margin-top: 2rem;">Education</h3>
-                    <div class="resume-item">
-                        <h4>Degree Name</h4>
-                        <p class="resume-meta">School/University | Graduation Year</p>
-                        <p>Relevant coursework and details</p>
-                    </div>
-                </div>
-
-                <div class="resume-column">
-                    <h3>Achievements</h3>
-                    <div class="achievements-list">
-                        <div class="achievement-item">
-                            <span class="achievement-icon">🏆</span>
-                            <div>
-                                <h4>Achievement Title</h4>
-                                <p>Award or recognition details</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <span class="achievement-icon">🏆</span>
-                            <div>
-                                <h4>Achievement Title</h4>
-                                <p>Award or recognition details</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <span class="achievement-icon">📄</span>
-                            <div>
-                                <h4>Certification Title</h4>
-                                <p>Issuing organization | Date</p>
-                            </div>
-                        </div>
-                        <div class="achievement-item">
-                            <span class="achievement-icon">📄</span>
-                            <div>
-                                <h4>Certification Title</h4>
-                                <p>Issuing organization | Date</p>
+                        <div class="preview-card">
+                            <h3>Key Skills</h3>
+                            <div class="skills-list">
+                                <span class="skill-tag">Digital Art</span>
+                                <span class="skill-tag">Game Design</span>
+                                <span class="skill-tag">3D Modeling</span>
+                                <span class="skill-tag">Unity</span>
+                                <span class="skill-tag">Unreal Engine</span>
+                                <span class="skill-tag">UI/UX Design</span>
                             </div>
                         </div>
                     </div>
-
-                    <h3 style="margin-top: 2rem;">Download Resume</h3>
-                    <a href="assets/resume.pdf" class="btn btn-primary" download>Download PDF</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-subtitle">Let's collaborate and create something amazing together</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>📧 Email</h3>
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>💼 LinkedIn</h3>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>👨 GitHub</h3>
-                        <a href="https://github.com/teworcapt" target="_blank">github.com/teworcapt</a>
-                    </div>
-                    <div class="contact-item">
-                        <h3>🎨 ArtStation</h3>
-                        <a href="https://artstation.com/yourprofile" target="_blank">ArtStation Portfolio</a>
-                    </div>
-                </div>
-
-                <form class="contact-form" action="#" method="POST">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 TewOrcapt. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://github.com/teworcapt" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </footer>
+            </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
