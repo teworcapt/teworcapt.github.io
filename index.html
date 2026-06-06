@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TewOrcapt - Portfolio</title>
+    <title>Portfolio - TewOrcapt</title>
     <link rel="stylesheet" href="styles-new.css">
 </head>
 <body>
@@ -18,8 +18,8 @@
             
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
                     <li><a href="about.html" class="nav-link">About & Contact</a></li>
                 </ul>
             </nav>
@@ -31,50 +31,142 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <!-- Hero Section -->
-            <section class="hero">
-                <div class="hero-background">
-                    <img src="images/hero-bg.jpg" alt="Hero Background" class="hero-image">
-                </div>
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <h1>Welcome</h1>
-                    <p class="hero-tagline">Creating immersive experiences through art and interactive gameplay</p>
-                    <div class="hero-cta">
-                        <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                        <a href="about.html" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Resume Quick Preview -->
-            <section class="resume-preview">
+            <section class="portfolio">
                 <div class="content-wrapper">
-                    <h2>Experience & Skills</h2>
-                    <div class="preview-grid">
-                        <div class="preview-card">
-                            <h3>Experience</h3>
-                            <ul class="experience-list">
-                                <li>
-                                    <strong>Position Title</strong>
-                                    <span class="meta">Company | Start - End</span>
-                                </li>
-                                <li>
-                                    <strong>Position Title</strong>
-                                    <span class="meta">Company | Start - End</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <h2>My Work</h2>
+                    
+                    <!-- Portfolio Tabs -->
+                    <div class="portfolio-tabs">
+                        <button class="tab-button active" data-tab="art">Art Portfolio</button>
+                        <button class="tab-button" data-tab="games">Game Development</button>
+                    </div>
 
-                        <div class="preview-card">
-                            <h3>Key Skills</h3>
-                            <div class="skills-list">
-                                <span class="skill-tag">Digital Art</span>
-                                <span class="skill-tag">Game Design</span>
-                                <span class="skill-tag">3D Modeling</span>
-                                <span class="skill-tag">Unity</span>
-                                <span class="skill-tag">Unreal Engine</span>
-                                <span class="skill-tag">UI/UX Design</span>
+                    <!-- Art Portfolio Tab -->
+                    <div id="art" class="tab-content active">
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/art/artwork-1.jpg" alt="Art Piece 1">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎨 Add your artwork</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title</h3>
+                                    <p>Description of your art project and the techniques used.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/art/artwork-2.jpg" alt="Art Piece 2">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎨 Add your artwork</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title</h3>
+                                    <p>Description of your art project and the techniques used.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/art/artwork-3.jpg" alt="Art Piece 3">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎨 Add your artwork</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title</h3>
+                                    <p>Description of your art project and the techniques used.</p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/art/artwork-4.jpg" alt="Art Piece 4">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎨 Add your artwork</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Project Title</h3>
+                                    <p>Description of your art project and the techniques used.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Games Portfolio Tab -->
+                    <div id="games" class="tab-content">
+                        <div class="portfolio-grid">
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/games/game-1.jpg" alt="Game 1">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎮 Add game screenshot</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Game Title</h3>
+                                    <p>Description of your game project, gameplay mechanics, and features.</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="link-btn">Play</a>
+                                        <a href="#" class="link-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/games/game-2.jpg" alt="Game 2">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎮 Add game screenshot</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Game Title</h3>
+                                    <p>Description of your game project, gameplay mechanics, and features.</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="link-btn">Play</a>
+                                        <a href="#" class="link-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/games/game-3.jpg" alt="Game 3">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎮 Add game screenshot</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Game Title</h3>
+                                    <p>Description of your game project, gameplay mechanics, and features.</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="link-btn">Play</a>
+                                        <a href="#" class="link-btn">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item">
+                                <div class="portfolio-image">
+                                    <img src="images/games/game-4.jpg" alt="Game 4">
+                                    <div class="portfolio-overlay">
+                                        <p class="placeholder">🎮 Add game screenshot</p>
+                                    </div>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h3>Game Title</h3>
+                                    <p>Description of your game project, gameplay mechanics, and features.</p>
+                                    <div class="portfolio-links">
+                                        <a href="#" class="link-btn">Play</a>
+                                        <a href="#" class="link-btn">Learn More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
