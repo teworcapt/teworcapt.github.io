@@ -23,6 +23,43 @@ function updateActiveNavLink(targetId) {
     });
 }
 
+// Tab switching functionality for portfolio
+document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const tabName = this.getAttribute('data-tab');
+
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            // Add active class to clicked button and corresponding content
+            this.classList.add('active');
+            document.getElementById(tabName).classList.add('active');
+        });
+    });
+
+    // Active nav link highlighting
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Check if this is the current page
+        if (currentPath.includes(href) || 
+            (currentPath.endsWith('/') && href === 'index.html') ||
+            (currentPath.includes('index.html'))) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+
 // Update nav link on scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
