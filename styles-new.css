@@ -47,7 +47,6 @@ body {
     padding: 2rem 1rem;
     gap: 2rem;
     background: var(--secondary-color);
-    border-right: 1px solid var(--border-color);
     overflow-y: auto;
 }
 
