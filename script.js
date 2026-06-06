@@ -19,20 +19,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- Active Nav Link Highlighting ---
     const navLinks = document.querySelectorAll('.nav-link');
-    const currentPath = window.location.pathname;
+    const currentFile = window.location.pathname.split('/').pop() || 'index.html';
 
     navLinks.forEach(link => {
         const href = link.getAttribute('href');
-        const isIndex = currentPath.endsWith('/') || currentPath.endsWith('index.html');
+        const linkFile = href.split('/').pop();
+        const isMatch =
+            linkFile === currentFile ||
+            (currentFile === '' && linkFile === 'index.html');
 
-        if (
-            (isIndex && href === 'index.html') ||
-            (!isIndex && currentPath.endsWith(href))
-        ) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
+        link.classList.toggle('active', isMatch);
     });
 
     // --- Scroll Fade-In Animation ---
