@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(el);
     });
 
+    
     // --- Contact Form Submission ---
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
