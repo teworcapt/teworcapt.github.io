@@ -384,6 +384,28 @@ h4 {
     color: var(--primary-color);
 }
 
+/* Games List */
+.games-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.game-embed-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game-embed-item iframe {
+    max-width: 100%;
+    display: block;
+}
+
+.game-info h3 {
+    margin-bottom: 0.4rem;
+}
+
 /* About Section */
 .about-content {
     margin-bottom: 2rem;
